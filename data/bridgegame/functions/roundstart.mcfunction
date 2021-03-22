@@ -1,7 +1,7 @@
 fill -29 84 -4 29 114 4 green_concrete replace lime_concrete
 fill -29 84 -4 29 114 4 blue_concrete replace light_blue_concrete
-spawnpoint @a[x=0,gamemode=adventure,team=bggreen] -23 105 0 -90
-spawnpoint @a[x=0,gamemode=adventure,team=bgblue] 22 105 0 90
+execute as @a[x=0,gamemode=adventure,team=bggreen] positioned -23 105 0 rotated -90 0 run function hub:main/death/spawnpoint
+execute as @a[x=0,gamemode=adventure,team=bgblue] positioned 22 105 0 rotated 90 0 run function hub:main/death/spawnpoint
 kill @a[x=0,gamemode=adventure]
 clear @a[x=0,gamemode=adventure]
 give @a[x=0,gamemode=adventure] iron_sword{CanDestroy:["light_blue_concrete","blue_concrete","green_concrete","lime_concrete"],Unbreakable:1b}

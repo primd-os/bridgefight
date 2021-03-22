@@ -1,7 +1,7 @@
 execute if score bluepoints bgpoints matches 5.. run title @a[x=0] title [{"text": "Blue Wins!","color": "blue"}]
 execute if score greenpoints bgpoints matches 5.. run title @a[x=0] title [{"text": "Green Wins!","color": "green"}]
 scoreboard players set * bgpoints 0
-spawnpoint @a[x=0] 0 116 0
+execute as @a[x=0] positioned 0 116 0 run function hub:main/death/spawnpoint
 fill -31 85 -5 30 115 5 barrier hollow
 fill -30 85 -4 29 85 4 air
 fill -20 100 0 0 100 0 green_terracotta
