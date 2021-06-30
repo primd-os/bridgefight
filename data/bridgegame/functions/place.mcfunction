@@ -11,4 +11,4 @@ execute as @a[x=0] at @s as @a[x=2.5,y=116,z=-1,dx=2.5,dy=2,dz=3,gamemode=advent
 execute as @a[x=0] at @s as @a[x=-1,y=116,z=-3,dx=1,dy=2,dz=1,gamemode=adventure] run team leave @s
 execute unless entity @a[x=0] run function bridgegame:endgame
 execute if score trash bgprogress matches 1 run gamemode spectator @a[x=0,team=!bgblue,team=!bggreen]
-effect give @a[x=0,gamemode=adventure] haste 1 1 true
+effect give @a[x=0,gamemode=adventure] haste 0 1 true
