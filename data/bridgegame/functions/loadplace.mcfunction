@@ -1,5 +1,5 @@
 forceload add -31 -5 30 5
-fill -31 85 -5 30 115 5 barrier hollow
+fill -31 85 -5 30 115 5 minecraft:barrier hollow
 fill -30 85 -4 29 85 4 air
 fill -20 100 0 0 100 0 green_terracotta
 fill 19 100 0 0 100 0 blue_terracotta
